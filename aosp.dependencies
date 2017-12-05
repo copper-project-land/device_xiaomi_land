@@ -1,0 +1,9 @@
+[
+  {
+    "repository": "LineageOS/android_hardware_cyanogen",
+    "target_path": "hardware/cyanogen"
+  {
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common"
+  }
+]
