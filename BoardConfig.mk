@@ -196,9 +196,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_POWERHAL_VARIANT := qcom
-
 # Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
@@ -231,6 +228,8 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
+
+TARGET_HAS_NO_WIFI_STATS := true
 
 # Enable Real time charging info
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
