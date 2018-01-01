@@ -31,6 +31,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Call QCOM Utils
+$(call inherit-product, $(DEVICE_PATH)/utils.mk)
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
