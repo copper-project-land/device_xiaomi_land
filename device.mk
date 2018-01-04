@@ -30,6 +30,9 @@ MSM_VIDC_TARGET_LIST := msm8937
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+PRODUCT_COPY_FILES += \
+    copperhead/bootanimation.zip:system/media/bootanimation.zip
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
