@@ -384,7 +384,6 @@ etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
 -framework/qcnvitems.jar|4da175a16c8a193bfa213801d9ebde6898cb93b1
 -framework/qcrilhook.jar|3b1235376a1300562234873e20a1a0331a2214bb
 -framework/qti-telephony-common.jar|7118b7365cff0297fb012bd6a19e75c185a4427a
--framework/telephony-ext.jar|804819549661eaf514b367bb24f5ae79a08f212f
 lib64/libparam.so|8b7b5582c032a933e14bbaa8ffedea52c8b8bec2
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|54081596046b0582926f1adea93e0017a6ec2f7c
 vendor/bin/hw/rild|6eeacf9f71e41e8e41b215c33927b08fca43dc25
@@ -498,7 +497,7 @@ vendor/lib64/libsensor_user_cal.so|fe6fb4ae9388bf7b3cc6e98dd2b1c6426be1bb07
 vendor/lib64/sensors.ssc.so|f1cb1ce05b6a20f2346f75b4c671eb92e731624e
 
 # Thermal - from msm8996
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+etc/thermal-engine.conf:vendor/etc/thermal-engine.conf
 vendor/bin/thermal-engine|8598eb10cc3316f8fa00c9ba792b2102a5d646ed
 -vendor/lib/libthermalclient.so|e14cd4d090e52394cb5a39912e71b50091873bcb
 -vendor/lib64/libthermalclient.so|9beae9671d80ee9b1d47689ed32b5780a863cb77
