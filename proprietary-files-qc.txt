@@ -20,8 +20,6 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
 vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # Audio
 etc/permissions/audiosphere.xml
@@ -235,7 +233,7 @@ vendor/lib/egl/libGLESv1_CM_adreno.so|b6804a9e72fab7f7708cc23e6c6c166c0cc3df3e
 vendor/lib/egl/libGLESv2_adreno.so|6a4b12190c297c8f21bba777876cfd6c27207158
 vendor/lib/egl/libq3dtools_adreno.so|0859b1ea8b49ed14429ca45826551f1633895264
 vendor/lib/egl/libQTapGLES.so|59a92cc3ffc98147498ee6895e60d66d8549796a
-vendor/lib/hw/vulkan.msm8996.so|776b410164d8b6938925e30d96d92f653dfa8fb2
+vendor/lib/hw/vulkan.msm8996.so:vendor/lib/hw/vulkan.msm8937.so|776b410164d8b6938925e30d96d92f653dfa8fb2
 vendor/lib/libadreno_utils.so|4efe5db073db43b7244d9ec50fc30d59601daf58
 vendor/lib/libbccQTI.so|3040265d853927de8560c997a4c4e618eb28f7ed
 vendor/lib/libC2D2.so|8830eb461ac5f920b21526ed5c536da162cbadaa
@@ -258,7 +256,7 @@ vendor/lib/libsd_sdk_display.so|9220b5f5d416280c1413d7573327c368e2716d7c
 vendor/lib/libsdm-color.so|9404c85d63894562733484ede557c3ac9635c52d
 vendor/lib/libsdm-diag.so|8613ea99b5fa79105657f8fc45982241a55c7fd2
 vendor/lib/libsdm-disp-apis.so|152b51f294f170ebd3528d80c6e65fcc4436f6aa
-vendor/lib/libsdm-disp-vndapis.so|e0964709bc17595eb5cd9dedabf703117a2714f8
+-vendor/lib/libsdm-disp-vndapis.so|e0964709bc17595eb5cd9dedabf703117a2714f8
 vendor/lib/libsdmextension.so|5d539b3215c6551a1fedb8c167d2fa086c9ed1ff
 vendor/lib/libtinyxml2_1.so|fddc48298389f15337c65a1b1fa3361925fa937e
 vendor/lib/vendor.display.color@1.0_vendor.so|3fd8ce917dad3762386f3d38211fd4f4d07a4cc1
@@ -293,7 +291,7 @@ vendor/lib64/libsd_sdk_display.so|5ef999f04e77592d92b3d9203746b11ee792b7ae
 vendor/lib64/libsdm-color.so|0db611bb5babef142b35de1769865c1d50772bda
 vendor/lib64/libsdm-diag.so|77d9f47d47831211e9811b691e3271c720663816
 vendor/lib64/libsdm-disp-apis.so|629e27c4bb84af37588831ed122167d609d767b0
-vendor/lib64/libsdm-disp-vndapis.so|c6f930ed2b3163b59b21ab8d0751a625b1d4308d
+-vendor/lib64/libsdm-disp-vndapis.so|c6f930ed2b3163b59b21ab8d0751a625b1d4308d
 vendor/lib64/libsdmextension.so|a2ac403747a4ad8716168b4f00721ec4fb19c5aa
 vendor/lib64/libtinyxml2_1.so|eb4cd93e051980b8b35f5eeebd3d980e033cb87f
 vendor/lib64/vendor.display.color@1.0_vendor.so|19674fd0716329d860fa61b589ccc5cccde0dfad
@@ -330,7 +328,6 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
--vendor/lib/libgpustats.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
@@ -346,7 +343,6 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
--vendor/lib64/libgpustats.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
 
@@ -359,7 +355,6 @@ lib/vendor.qti.hardware.iop@1.0.so
 lib/vendor.qti.hardware.perf@1.0.so
 lib64/vendor.qti.hardware.iop@1.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
-vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.iop@1.0-service
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/bin/msm_irqbalance
@@ -387,12 +382,10 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
--vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-dpps
 vendor/lib64/libdisp-aba.so
 
 # QMI
-etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
 lib/libdiag_system.so
 lib/libqmi_cci_system.so
@@ -433,7 +426,6 @@ vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
 # Radio
--app/SimSettings/SimSettings.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
@@ -485,7 +477,6 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 -app/ims/ims.apk
--app/imssettings/imssettings.apk
 etc/permissions/qti-vzw-ims-internal.xml
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so
@@ -556,7 +547,6 @@ vendor/bin/thermal-engine
 vendor/lib64/libthermalioctl.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 -vendor/lib64/libtime_genoff.so
