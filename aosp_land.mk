@@ -25,6 +25,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Call QCOM Utils
 $(call inherit-product, $(DEVICE_PATH)/utils.mk)
 
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Wingtech
