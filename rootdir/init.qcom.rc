@@ -468,7 +468,9 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_na
-    setprop sys.io.scheduler maple
+
+on property:sys.boot_completed=1
+    setprop sys.io.scheduler bfq
 
 #bug156417 zhaoqf_sh add Allow usb charging to be disabled peristently
 on property:persist.sys.chgdisabled=1
