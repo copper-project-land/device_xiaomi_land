@@ -49,4 +49,5 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
 
 # Build Launcher
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    WallpaperPicker
