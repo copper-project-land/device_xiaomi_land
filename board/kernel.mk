@@ -8,3 +8,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --second_offset 0x00f00000 -
 
 TARGET_KERNEL_CONFIG := lineageos_land_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN_PREFIX :=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
