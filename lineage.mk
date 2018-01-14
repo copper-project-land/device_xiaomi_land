@@ -49,3 +49,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
+
+# Build Launcher
+PRODUCT_PACKAGES += \
+    Launcher3
