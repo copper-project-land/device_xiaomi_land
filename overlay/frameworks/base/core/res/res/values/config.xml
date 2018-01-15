@@ -481,4 +481,20 @@
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
     in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <string name="config_deviceKeyHandlerLib" translatable="false"></string>
+
+<!--    <string name="config_deviceKeyHandlerClass" translatable="false"></string>-->
+
+<!--    <integer name="config_longPressOnAppSwitchKeyBehavior">1</integer>    -->
+
+    <integer name="config_longPressOnBackBehavior">0</integer>
+
+<!--    <bool name="config_defaultToNavigationBar">false</bool>-->
+
+<!--    <integer name="config_doubleTapOnAppSwitchKeyBehavior">8</integer>-->
+
+<!--    <bool name="config_enableKeyHandler">true</bool>-->
+
+    <bool name="config_showNavigationBar">false</bool>
 </resources>
