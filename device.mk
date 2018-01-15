@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_interface \
     libmmjpeg_interface \
     libqomx_core \
-    SnapdragonCamera
+    Snap
 
 # Camera HIDL HAL
 PRODUCT_PACKAGES += \
