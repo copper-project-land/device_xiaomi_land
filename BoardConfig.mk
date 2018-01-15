@@ -18,6 +18,8 @@
 
 DEVICE_PATH := device/xiaomi/land
 
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+
 # Architecture
 TARGET_ARCH 	    	:= arm64
 TARGET_ARCH_VARIANT 	:= armv8-a
@@ -52,6 +54,9 @@ BOARD_MKBOOTIMG_ARGS 		:= --ramdisk_offset 0x01000000 --second_offset 0x00f00000
 TARGET_KERNEL_CONFIG 		:= land_defconfig
 TARGET_KERNEL_SOURCE 		:= kernel/xiaomi/msm8937
 TARGET_KERNEL_HAVE_EXFAT	:= true
+
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN_PREFIX :=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 # ANT
 #BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
