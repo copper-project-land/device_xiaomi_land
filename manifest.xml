@@ -27,7 +27,7 @@ included.
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <!--hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport arch="32+64">passthrough</transport>
         <version>2.0</version>
@@ -35,7 +35,7 @@ included.
             <name>IEffectsFactory</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal-->
     <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
